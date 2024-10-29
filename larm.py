@@ -1,8 +1,7 @@
 
-
 class Alarm:
-    def __init__(self, type, level):
-        self.type = type  # Typ av larm
+    def __init__(self, alarm_type, level):
+        self.type = alarm_type  # Typ av larm
         self.level = level  # Nivå för larm
 
     def __str__(self):
@@ -45,5 +44,3 @@ class AlarmManager:
         else:
             for alarm in sorted(self.alarms, key=lambda x: x.type):
                 print(alarm)  # Visar varje larm
-
-
